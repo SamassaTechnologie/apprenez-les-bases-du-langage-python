@@ -1,6 +1,25 @@
 body {
   background: #f8f9fa;
+  font-family: Arial, sans-serif;
 }
 .container {
   max-width: 400px;
+  margin: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(0,0,0,0.07);
+  padding: 2rem;
+  margin-top: 3rem;
+}
+.form-label {
+  font-weight: bold;
+}
+.btn {
+  font-size: 1.1rem;
+}
+#result {
+  white-space: pre-wrap;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 1rem;
 }
