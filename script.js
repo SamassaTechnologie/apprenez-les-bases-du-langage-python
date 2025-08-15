@@ -41,5 +41,23 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-// Initialisation
+// Initiafunction mettreAJourDashboard() {
+  const fichiers = JSON.parse(localStorage.getItem('documents')) || [];
+  document.getElementById('doc-count').textContent = `📄 Documents : ${fichiers.length}`;
+  document.getElementById('client-count').textContent = `👥 Clients : ${fichiers.length}`; // à affiner plus tard
+  document.getElementById('last-update').textContent = `📅 Dernière mise à jour : ${new Date().toLocaleDateString()}`;
+}
+
+// Appelle cette fonction après chaque ajout/suppression
+function sauvegarderListe() {
+  const fichiers = [];
+  document.querySelectorAll('.file-list li').forEach(li => {
+    fichiers.push(li.textContent.replace('🗑', '').trim());
+  });
+  localStorage.setItem('documents', JSON.stringify(fichiers));
+  mettreAJourDashboard();
+}
+
+chargerListe();
+mettreAJourDashboard();lisation
 chargerListe();
