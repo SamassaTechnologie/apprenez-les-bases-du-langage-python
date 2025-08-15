@@ -57,7 +57,10 @@ function sauvegarderListe() {
   localStorage.setItem('documents', JSON.stringify(fichiers));
   mettreAJourDashboard();
 }
-
+function ouvrirModele(type) {
+  alert(`Ouverture du modèle : ${type.toUpperCase()}\n(Fonction à développer)`);
+  // Plus tard : ouvrir une page ou formulaire avec champs modifiables
+}
 chargerListe();
 mettreAJourDashboard();lisation
 chargerListe();
