@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybercafé Docs Suite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cybercafé Docs Suite</h1>
+        <p>Générez vos documents rapidement et facilement</p>
+    </header>
+
+    <main>
+        <section class="categories">
+            <h2>Catégories</h2>
+            <div class="category-list">
+                <button onclick="loadCategory('lettres')">Lettres administratives</button>
+                <button onclick="loadCategory('certificats')">Certificats</button>
+                <button onclick="loadCategory('declarations')">Déclarations</button>
+                <button onclick="loadCategory('bancaires')">Documents bancaires</button>
+            </div>
+        </section>
+
+        <section id="form-section">
+            <h2>Formulaire</h2>
+            <div id="form-container">
+                <p>Choisissez une catégorie pour commencer.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Cybercafé Docs Suite</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
