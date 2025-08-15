@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Suite Documents – Samassa Technologie</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/style.css" />
+  <script type="module" src="/assets/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    
+<header class="header">
+  <div class="brand">
+    <img src="/assets/logo.svg" alt="Logo" />
+    <div class="title">
+      <h1>Samassa Technologie</h1>
+      <small>Tout pour l’informatique</small>
+    </div>
+  </div>
+  <div class="nav">
+    <a href="/index.html">Accueil</a>
+    <a href="/facture.html">Facture</a>
+    <a href="/recu.html">Reçu</a>
+    <a href="/devis.html">Devis</a>
+    <a href="/lettres.html">Lettres</a>
+  </div>
+</header>
+
+    <div class="card">
+      <h2>Suite d’applications – Documents Professionnels</h2>
+      <p class="badge">PWA • Hors ligne • Impression A4</p>
+      <div class="grid">
+        <a class="card" href="/facture.html">
+          <h3>Générateur de Facture</h3>
+          <p>Calcul automatique, remise, taxe, impression A4/PDF.</p>
+        </a>
+        <a class="card" href="/recu.html">
+          <h3>Générateur de Reçu</h3>
+          <p>Reçu simple avec montant en lettres, prêt à imprimer.</p>
+        </a>
+        <a class="card" href="/devis.html">
+          <h3>Générateur de Devis</h3>
+          <p>Proposition commerciale claire, totaux et conditions.</p>
+        </a>
+        <a class="card" href="/lettres.html">
+          <h3>Lettres & Demandes</h3>
+          <p>Modèles de courriers administratifs, personnalisables.</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Paramètres entreprise</h3>
+      <form id="formCompany" oninput="saveForm('formCompany')" onsubmit="event.preventDefault(); alert('Paramètres sauvegardés');">
+        <div class="row">
+          <div>
+            <label>Nom</label>
+            <input name="name" value="Samassa Technologie" />
+          </div>
+          <div>
+            <label>Slogan</label>
+            <input name="slogan" value="Tout pour l’informatique" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Adresse</label>
+            <input name="address" value="Grand Marché de Kayes, près du 1er arrondissement de la police, Rue Soundiata Keita" />
+          </div>
+          <div>
+            <label>Téléphone</label>
+            <input name="phone" value="00223 77291931" />
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label>Email</label>
+            <input name="email" value="samassatechnologie10@gmail.com" />
+          </div>
+          <div>
+            <label>Devise</label>
+            <input name="currency" value="F CFA" />
+          </div>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn" type="button" onclick="(function(){const d=Object.fromEntries(new FormData(document.getElementById('formCompany')).entries()); setCompany(d); alert('Infos entreprise mises à jour');})()">Enregistrer</button>
+          <button class="btn clear" type="button" onclick="localStorage.clear(); location.reload()">Réinitialiser</button>
+        </div>
+      </form>
+    </div>
+    
+<footer class="footer">
+  <strong>Samassa Technologie – Tout pour l’informatique</strong>
+  Grand Marché de Kayes, près du 1er arrondissement de la police, Rue Soundiata Keita – 00223 77291931 – samassatechnologie10@gmail.com
+</footer>
+
+  </div>
+</body>
+</html>

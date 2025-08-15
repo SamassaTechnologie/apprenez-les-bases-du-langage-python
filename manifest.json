@@ -1,0 +1,15 @@
+{
+  "name": "Samassa Technologie – Suite Documents",
+  "short_name": "SamassaDocs",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
