@@ -54,5 +54,20 @@
 <div id="history-list"></div>
 
 <script src="history.js"></script>
+    <!-- Sélecteur de langue -->
+<select onchange="changeLanguage(this.value)">
+    <option value="fr">🇫🇷 Français</option>
+    <option value="bm">🇲🇱 Bambara</option>
+    <option value="en">🇬🇧 English</option>
+</select>
+
+<h1 data-translate="title"></h1>
+
+<button data-translate="saveDocument" onclick="saveToHistory(prompt('Nom du document :'), document.getElementById('form-container').innerText)"></button>
+
+<h3 data-translate="history"></h3>
+<div id="history-list"></div>
+
+<input type="text" data-placeholder="searchPlaceholder">
 </body>
 </html>
