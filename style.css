@@ -173,3 +173,44 @@ input[type="text"] {
     margin-left: 240px;
     padding: 10px;
 }
+/* 📌 Bouton burger */
+#menu-toggle {
+    display: none;
+    background: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    border-radius: 6px;
+}
+
+/* 📌 Responsive (écrans petits comme iPhone 13 Mini) */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -220px; /* caché par défaut */
+        transition: left 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    #sidebar.active {
+        left: 0; /* affiché */
+    }
+
+    #menu-toggle {
+        display: block; /* visible sur mobile */
+    }
+
+    #content {
+        margin-left: 0; /* pas de décalage sur mobile */
+        padding-top: 50px; /* pour éviter de cacher le contenu derrière le bouton */
+    }
+}
