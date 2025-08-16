@@ -46,5 +46,13 @@
 <button onclick="generateWithAI('corriger')">Corriger avec IA</button>
 
 <script src="ai.js"></script>
+    <button onclick="saveToHistory(prompt('Nom du document :'), document.getElementById('form-container').innerText)">
+    💾 Sauvegarder le document
+</button>
+
+<h3>📜 Historique</h3>
+<div id="history-list"></div>
+
+<script src="history.js"></script>
 </body>
 </html>
