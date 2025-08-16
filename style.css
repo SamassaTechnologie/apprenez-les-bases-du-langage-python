@@ -125,3 +125,51 @@ input[type="text"] {
         padding: 10px;
     }
 }
+/* 📌 Sidebar */
+#sidebar {
+    width: 220px;
+    background: #004aad;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.2);
+}
+
+#sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin-bottom: 10px;
+}
+
+#sidebar button {
+    background: white;
+    color: #004aad;
+    width: 100%;
+    text-align: left;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    background: #f0f0f0;
+}
+
+/* 📌 Contenu principal à droite */
+#content {
+    margin-left: 240px;
+    padding: 10px;
+}
