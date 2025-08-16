@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 📌 Sidebar -->
+<div id="sidebar">
+  <h2>📂 Catégories</h2>
+  <ul>
+    <li><button onclick="filterCategory('administratif')">📄 Administratif</button></li>
+    <li><button onclick="filterCategory('bancaire')">🏦 Bancaire</button></li>
+    <li><button onclick="filterCategory('certificat')">📜 Certificats</button></li>
+    <li><button onclick="filterCategory('fiscal')">💰 Fiscal</button></li>
+    <li><button onclick="filterCategory('autres')">➕ Autres</button></li>
+  </ul>
+</div>
+
+<!-- 📌 Contenu principal -->
+<div id="content">
+  <header>
+    <h1>Suite Cybercafé</h1>
+    <select id="lang-select">
+      <option value="fr">Français</option>
+      <option value="bm">Bambara</option>
+      <option value="en">English</option>
+    </select>
+  </header>
+
+  <main>
+    <input type="text" placeholder="🔍 Rechercher un document..." />
+    <div id="form-container"></div>
+    <div id="history-list"></div>
+  </main>
+</div>
     <header>
         <h1>Cybercafé Docs Suite SAMASSA TECHNOLOGIE</h1>
         <p>Générez vos documents rapidement et facilement</p>
