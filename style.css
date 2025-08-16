@@ -1,60 +1,127 @@
-
+/* 🌐 Style global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f6fa;
-    color: #2f3640;
+    background: #f9fafe;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* 🌐 En-tête */
 header {
-    background-color: #273c75;
+    background: #004aad;
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-main {
-    padding: 20px;
-}
-
-.categories {
-    margin-bottom: 20px;
-}
-
-.category-list button {
-    background-color: #0097e6;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    margin: 5px;
+/* 🌐 Sélecteur de langue */
+header select {
+    margin-top: 10px;
+    padding: 6px;
     border-radius: 5px;
-    cursor: pointer;
+    border: none;
     font-size: 14px;
 }
 
-.category-list button:hover {
-    background-color: #00a8ff;
+/* 📂 Contenu principal */
+main {
+    flex: 1;
+    padding: 15px;
+    max-width: 1000px;
+    margin: auto;
 }
 
-#form-section {
+/* 📌 Boutons */
+button {
+    display: inline-block;
+    margin: 5px 0;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button.primary {
+    background: #004aad;
+    color: white;
+}
+
+button.secondary {
+    background: #f0f0f0;
+    color: #222;
+}
+
+/* 📑 Zone des formulaires */
+#form-container {
     background: white;
     padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    min-height: 200px;
 }
 
-footer {
-    background-color: #273c75;
-    color: white;
-    text-align: center;
+/* 📜 Historique */
+#history-list {
+    margin-top: 15px;
+}
+
+#history-list div {
+    background: #fff;
+    margin: 8px 0;
     padding: 10px;
-    position: fixed;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#history-list button {
+    width: auto;
+    margin-left: 5px;
+}
+
+/* 🔍 Barre de recherche */
+input[type="text"] {
     width: 100%;
-    bottom: 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* 📱 Responsive pour iPhone */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    #form-container {
+        padding: 10px;
+    }
 }
