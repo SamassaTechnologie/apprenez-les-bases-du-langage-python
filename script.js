@@ -26,3 +26,7 @@ function loadCategory(category) {
 function generateDocument() {
     alert("Ici, le document sera généré et prêt à être exporté.");
 }
+function filterCategory(category) {
+    document.getElementById("form-container").innerHTML =
+        `<p>📂 Vous avez choisi la catégorie : <b>${category}</b>. Sélectionnez un modèle pour continuer.</p>`;
+}
