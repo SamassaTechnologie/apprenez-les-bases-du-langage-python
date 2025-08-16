@@ -1,0 +1,26 @@
+{
+    "fr": {
+        "title": "Application Cybercafé",
+        "saveDocument": "💾 Sauvegarder le document",
+        "history": "📜 Historique",
+        "open": "Ouvrir",
+        "delete": "Supprimer",
+        "searchPlaceholder": "Rechercher un document..."
+    },
+    "bm": {
+        "title": "Kɔmpitɛri Jɛkɛyɔrɔ",
+        "saveDocument": "💾 Sɛbɛn de bɔ",
+        "history": "📜 Tɔgɔkun",
+        "open": "Dɔnkɔ",
+        "delete": "Bɔ",
+        "searchPlaceholder": "Sɔrɔ sɛbɛn..."
+    },
+    "en": {
+        "title": "Cybercafé Application",
+        "saveDocument": "💾 Save Document",
+        "history": "📜 History",
+        "open": "Open",
+        "delete": "Delete",
+        "searchPlaceholder": "Search document..."
+    }
+}
