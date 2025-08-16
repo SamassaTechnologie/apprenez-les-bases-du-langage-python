@@ -30,3 +30,7 @@ function filterCategory(category) {
     document.getElementById("form-container").innerHTML =
         `<p>📂 Vous avez choisi la catégorie : <b>${category}</b>. Sélectionnez un modèle pour continuer.</p>`;
 }
+// 📌 Activer/Désactiver le menu burger
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    document.getElementById("sidebar").classList.toggle("active");
+});
